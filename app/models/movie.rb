@@ -4,7 +4,6 @@ class Movie < ApplicationRecord
   validates :overview, presence: true
 end
 
-
 # has a comment (FAILED - 1)
 #   comment cannot be shorter than 6 characters (FAILED - 2)
 #   belongs to a movie (FAILED - 3)

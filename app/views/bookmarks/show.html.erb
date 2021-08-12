@@ -1,0 +1,8 @@
+<h2><%= @bookmark.comment %></h2>
+
+
+<%= link_to "edit", bookmark_edit_path(@bookmark) %>
+<%= link_to "Delete #{@bookmark.comment}",
+              bookmark_path(@bookmark),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>

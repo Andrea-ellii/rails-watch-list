@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
 end
 
-
 # class RestaurantsController < ApplicationController
 #   def index
 #     @restaurants = Restaurant.all

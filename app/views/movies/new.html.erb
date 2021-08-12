@@ -1,0 +1,12 @@
+<h1> Our movies </h1>
+<%= form_for (@movies) do |t| %>
+  <%= t.label :title%>
+  <%= t.text_field :title %>
+  <%= t.label :overview%>
+  <%= t.text_field :overview %>
+  <%= t.label :poster_url%>
+  <%= t.text_field :poster_url %>
+  <%= t.label :rating%>
+  <%= t.text_field :rating %>
+  <%= t.submit %>
+<% end %>
