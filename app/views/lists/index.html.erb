@@ -1,7 +1,8 @@
 <h1> Ours lists </h1>
 <ul>
 <li>
-<%= @lists.each do |list| %>
+<% @lists.each do |list| %>
 <%=  link_to list.name, list_path(list) %>
+<% end %>
 </ul>
 </li>

@@ -1,8 +1,9 @@
 <h1>Create a new bookmark</h1>
 
-<%= form_for (@bookmark) do |t| %>
-  <%= t.label :comment%>
+<%= simple_form_for [@list, @bookmark] do |t| %>
+  <%= t.label :comment %>
   <%= t.text_field :comment %>
+  <%= t.association :movie %>
   <%= t.submit %>
 <% end %>
 
